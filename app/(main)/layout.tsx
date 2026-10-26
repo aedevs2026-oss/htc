@@ -7,7 +7,7 @@ export default function MainLayout({ children }: Readonly<{ children: React.Reac
   return (
     <>
       <SiteHeader />
-      <main>{children}</main>
+      <main className="site-main">{children}</main>
       <SiteFooter />
       <MobileTabBar />
       <DealerLocationPrompt />

@@ -27,6 +27,15 @@ test.describe("Homepage responsive layout", () => {
   test("key sections render without horizontal overflow", async ({ page }) => {
     await assertNoHorizontalOverflow(page);
 
+    const container = page.locator(".home-page .site-container").first();
+    const box = await container.boundingBox();
+    const viewport = page.viewportSize();
+    if (box && viewport) {
+      const gutter = (viewport.width - box.width) / 2;
+      expect(gutter).toBeGreaterThanOrEqual(14);
+      expect(gutter).toBeLessThanOrEqual(28);
+    }
+
     await expect(page.getByRole("heading", { name: /shop by category/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: /explore by room/i })).toBeVisible();
     await expect(page.getByRole("heading", { name: /featured catalogue pieces/i })).toBeVisible();
