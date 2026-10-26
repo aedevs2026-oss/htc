@@ -1,0 +1,22 @@
+{
+  "heroStats": {
+    "brands": "10+",
+    "designs": "510+",
+    "dealers": "25+"
+  },
+  "featuredProductIds": [],
+  "spotlightCategorySlugs": [
+    "sofa",
+    "bedroom",
+    "dining",
+    "office-furniture",
+    "coffee-table",
+    "wardrobe"
+  ],
+  "collectionSlugs": [
+    "sofa",
+    "bedroom",
+    "dining",
+    "new"
+  ]
+}

@@ -1,0 +1,522 @@
+[
+  {
+    "id": "bar-chair",
+    "name": "Bar Chair",
+    "slug": "bar-chair",
+    "parent": null,
+    "count": 8,
+    "description": "Bar Chair — 8 products in HTC catalogue.",
+    "image": "/images/categories/bar-chair.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/bar-chair/"
+  },
+  {
+    "id": "bed-1-5",
+    "name": "Bed 1 5",
+    "slug": "bed-1-5",
+    "parent": null,
+    "count": 2,
+    "description": "Bed 1 5 — 2 products in HTC catalogue.",
+    "image": "/images/categories/bed-1-5.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/bed-1-5/"
+  },
+  {
+    "id": "bed-1-8",
+    "name": "Bed 1 8",
+    "slug": "bed-1-8",
+    "parent": null,
+    "count": 19,
+    "description": "Bed 1 8 — 19 products in HTC catalogue.",
+    "image": "/images/categories/bed-1-8.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/bed-1-8/"
+  },
+  {
+    "id": "bedroom",
+    "name": "Bedroom",
+    "slug": "bedroom",
+    "parent": null,
+    "count": 74,
+    "description": "Bedroom — 74 products in HTC catalogue.",
+    "image": "/images/bedroom.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/bedroom/"
+  },
+  {
+    "id": "bedroom-set",
+    "name": "Bedroom Set",
+    "slug": "bedroom-set",
+    "parent": null,
+    "count": 3,
+    "description": "Bedroom Set — 3 products in HTC catalogue.",
+    "image": "/images/categories/bedroom-set.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/bedroom-set/"
+  },
+  {
+    "id": "book-shelf",
+    "name": "Book Shelf",
+    "slug": "book-shelf",
+    "parent": null,
+    "count": 7,
+    "description": "Book Shelf — 7 products in HTC catalogue.",
+    "image": "/images/categories/book-shelf.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/book-shelf/"
+  },
+  {
+    "id": "boss10-office-chair",
+    "name": "Boss10 Office Chair",
+    "slug": "boss10-office-chair",
+    "parent": null,
+    "count": 23,
+    "description": "Boss10 Office Chair — 23 products in HTC catalogue.",
+    "image": "/images/categories/boss10-office-chair.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/boss10-office-chair/"
+  },
+  {
+    "id": "boss10-visitor-chair",
+    "name": "Boss10 Visitor Chair",
+    "slug": "boss10-visitor-chair",
+    "parent": null,
+    "count": 1,
+    "description": "Boss10 Visitor Chair — 1 products in HTC catalogue.",
+    "image": "/images/categories/boss10-visitor-chair.png",
+    "sourceUrl": "https://htcfurniture.in/product-category/boss10-visitor-chair/"
+  },
+  {
+    "id": "children-bed",
+    "name": "Children Bed",
+    "slug": "children-bed",
+    "parent": null,
+    "count": 2,
+    "description": "Children Bed — 2 products in HTC catalogue.",
+    "image": "/images/categories/children-bed.png",
+    "sourceUrl": "https://htcfurniture.in/product-category/children-bed/"
+  },
+  {
+    "id": "coffee-table",
+    "name": "Coffee Table",
+    "slug": "coffee-table",
+    "parent": null,
+    "count": 65,
+    "description": "Coffee Table — 65 products in HTC catalogue.",
+    "image": "/images/category-premium.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/coffee-table/"
+  },
+  {
+    "id": "coffee-table-coffee-table",
+    "name": "Coffee Table Coffee Table",
+    "slug": "coffee-table-coffee-table",
+    "parent": null,
+    "count": 65,
+    "description": "Coffee Table Coffee Table — 65 products in HTC catalogue.",
+    "image": "/images/categories/coffee-table-coffee-table.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/coffee-table-coffee-table/"
+  },
+  {
+    "id": "computer-table",
+    "name": "Computer Table",
+    "slug": "computer-table",
+    "parent": null,
+    "count": 4,
+    "description": "Computer Table — 4 products in HTC catalogue.",
+    "image": "/images/categories/computer-table.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/computer-table/"
+  },
+  {
+    "id": "dining",
+    "name": "Dining",
+    "slug": "dining",
+    "parent": null,
+    "count": 117,
+    "description": "Dining — 117 products in HTC catalogue.",
+    "image": "/images/category-dining.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining/"
+  },
+  {
+    "id": "dining-chair",
+    "name": "Dining Chair",
+    "slug": "dining-chair",
+    "parent": null,
+    "count": 21,
+    "description": "Dining Chair — 21 products in HTC catalogue.",
+    "image": "/images/categories/dining-chair.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining-chair/"
+  },
+  {
+    "id": "dining-set-4ch",
+    "name": "Dining Set 4CH",
+    "slug": "dining-set-4ch",
+    "parent": null,
+    "count": 24,
+    "description": "Dining Set 4CH — 24 products in HTC catalogue.",
+    "image": "/images/categories/dining-set-4ch.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining-set-4ch/"
+  },
+  {
+    "id": "dining-set-6ch",
+    "name": "Dining Set 6CH",
+    "slug": "dining-set-6ch",
+    "parent": null,
+    "count": 44,
+    "description": "Dining Set 6CH — 44 products in HTC catalogue.",
+    "image": "/images/categories/dining-set-6ch.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining-set-6ch/"
+  },
+  {
+    "id": "dining-set-8ch",
+    "name": "Dining Set 8CH",
+    "slug": "dining-set-8ch",
+    "parent": null,
+    "count": 6,
+    "description": "Dining Set 8CH — 6 products in HTC catalogue.",
+    "image": "/images/categories/dining-set-8ch.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining-set-8ch/"
+  },
+  {
+    "id": "dining-table",
+    "name": "Dining Table",
+    "slug": "dining-table",
+    "parent": null,
+    "count": 22,
+    "description": "Dining Table — 22 products in HTC catalogue.",
+    "image": "/images/categories/dining-table.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/dining-table/"
+  },
+  {
+    "id": "dresser",
+    "name": "Dresser",
+    "slug": "dresser",
+    "parent": null,
+    "count": 21,
+    "description": "Dresser — 21 products in HTC catalogue.",
+    "image": "/images/categories/dresser.png",
+    "sourceUrl": "https://htcfurniture.in/product-category/dresser/"
+  },
+  {
+    "id": "mattress",
+    "name": "Mattress",
+    "slug": "mattress",
+    "parent": null,
+    "count": 26,
+    "description": "Mattress — 26 products in HTC catalogue.",
+    "image": "/images/categories/mattress.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/mattress/"
+  },
+  {
+    "id": "misc-recliner",
+    "name": "Misc Recliner",
+    "slug": "misc-recliner",
+    "parent": null,
+    "count": 20,
+    "description": "Misc Recliner — 20 products in HTC catalogue.",
+    "image": "/images/categories/misc-recliner.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/misc-recliner/"
+  },
+  {
+    "id": "new",
+    "name": "New",
+    "slug": "new",
+    "parent": null,
+    "count": 11,
+    "description": "New — 11 products in HTC catalogue.",
+    "image": "/images/categories/new.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/new/"
+  },
+  {
+    "id": "office-chair",
+    "name": "Office Chair",
+    "slug": "office-chair",
+    "parent": null,
+    "count": 17,
+    "description": "Office Chair — 17 products in HTC catalogue.",
+    "image": "/images/categories/office-chair.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-chair/"
+  },
+  {
+    "id": "office-furniture",
+    "name": "Office Furniture",
+    "slug": "office-furniture",
+    "parent": null,
+    "count": 125,
+    "description": "Office Furniture — 125 products in HTC catalogue.",
+    "image": "/images/home-office.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-furniture/"
+  },
+  {
+    "id": "office-table-1-2",
+    "name": "Office Table 1 2",
+    "slug": "office-table-1-2",
+    "parent": null,
+    "count": 10,
+    "description": "Office Table 1 2 — 10 products in HTC catalogue.",
+    "image": "/images/categories/office-table-1-2.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-1-2/"
+  },
+  {
+    "id": "office-table-1-4",
+    "name": "Office Table 1 4",
+    "slug": "office-table-1-4",
+    "parent": null,
+    "count": 5,
+    "description": "Office Table 1 4 — 5 products in HTC catalogue.",
+    "image": "/images/categories/office-table-1-4.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-1-4/"
+  },
+  {
+    "id": "office-table-1-6",
+    "name": "Office Table 1 6",
+    "slug": "office-table-1-6",
+    "parent": null,
+    "count": 10,
+    "description": "Office Table 1 6 — 10 products in HTC catalogue.",
+    "image": "/images/categories/office-table-1-6.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-1-6/"
+  },
+  {
+    "id": "office-table-1-8",
+    "name": "Office Table 1 8",
+    "slug": "office-table-1-8",
+    "parent": null,
+    "count": 10,
+    "description": "Office Table 1 8 — 10 products in HTC catalogue.",
+    "image": "/images/categories/office-table-1-8.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-1-8/"
+  },
+  {
+    "id": "office-table-2-0",
+    "name": "Office Table 2 0",
+    "slug": "office-table-2-0",
+    "parent": null,
+    "count": 5,
+    "description": "Office Table 2 0 — 5 products in HTC catalogue.",
+    "image": "/images/categories/office-table-2-0.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-2-0/"
+  },
+  {
+    "id": "office-table-2-2",
+    "name": "Office Table 2 2",
+    "slug": "office-table-2-2",
+    "parent": null,
+    "count": 1,
+    "description": "Office Table 2 2 — 1 products in HTC catalogue.",
+    "image": "/images/categories/office-table-2-2.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-2-2/"
+  },
+  {
+    "id": "office-table-2-4",
+    "name": "Office Table 2 4",
+    "slug": "office-table-2-4",
+    "parent": null,
+    "count": 4,
+    "description": "Office Table 2 4 — 4 products in HTC catalogue.",
+    "image": "/images/categories/office-table-2-4.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/office-table-2-4/"
+  },
+  {
+    "id": "pillow",
+    "name": "Pillow",
+    "slug": "pillow",
+    "parent": null,
+    "count": 1,
+    "description": "Pillow — 1 products in HTC catalogue.",
+    "image": "/images/categories/pillow.png",
+    "sourceUrl": "https://htcfurniture.in/product-category/pillow/"
+  },
+  {
+    "id": "recliner-air-leather",
+    "name": "Recliner Air Leather",
+    "slug": "recliner-air-leather",
+    "parent": null,
+    "count": 5,
+    "description": "Recliner Air Leather — 5 products in HTC catalogue.",
+    "image": "/images/categories/recliner-air-leather.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/recliner-air-leather/"
+  },
+  {
+    "id": "recliner-leather",
+    "name": "Recliner Leather",
+    "slug": "recliner-leather",
+    "parent": null,
+    "count": 8,
+    "description": "Recliner Leather — 8 products in HTC catalogue.",
+    "image": "/images/categories/recliner-leather.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/recliner-leather/"
+  },
+  {
+    "id": "screen-room-divider",
+    "name": "Screen Room Divider",
+    "slug": "screen-room-divider",
+    "parent": null,
+    "count": 2,
+    "description": "Screen Room Divider — 2 products in HTC catalogue.",
+    "image": "/images/categories/screen-room-divider.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/screen-room-divider/"
+  },
+  {
+    "id": "shoe-rack",
+    "name": "Shoe Rack",
+    "slug": "shoe-rack",
+    "parent": null,
+    "count": 1,
+    "description": "Shoe Rack — 1 products in HTC catalogue.",
+    "image": "/images/categories/shoe-rack.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/shoe-rack/"
+  },
+  {
+    "id": "sofa",
+    "name": "Sofa",
+    "slug": "sofa",
+    "parent": null,
+    "count": 51,
+    "description": "Sofa — 51 products in HTC catalogue.",
+    "image": "/images/category-living.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/sofa/"
+  },
+  {
+    "id": "sofa-corner",
+    "name": "Sofa Corner",
+    "slug": "sofa-corner",
+    "parent": null,
+    "count": 6,
+    "description": "Sofa Corner — 6 products in HTC catalogue.",
+    "image": "/images/categories/sofa-corner.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/sofa-corner/"
+  },
+  {
+    "id": "sofa-cum-bed",
+    "name": "Sofa Cum Bed",
+    "slug": "sofa-cum-bed",
+    "parent": null,
+    "count": 3,
+    "description": "Sofa Cum Bed — 3 products in HTC catalogue.",
+    "image": "/images/categories/sofa-cum-bed.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/sofa-cum-bed/"
+  },
+  {
+    "id": "sofa-leather",
+    "name": "Sofa Leather",
+    "slug": "sofa-leather",
+    "parent": null,
+    "count": 5,
+    "description": "Sofa Leather — 5 products in HTC catalogue.",
+    "image": "/images/categories/sofa-leather.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/sofa-leather/"
+  },
+  {
+    "id": "sofa-pvc",
+    "name": "Sofa Pvc",
+    "slug": "sofa-pvc",
+    "parent": null,
+    "count": 4,
+    "description": "Sofa Pvc — 4 products in HTC catalogue.",
+    "image": "/images/categories/sofa-pvc.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/sofa-pvc/"
+  },
+  {
+    "id": "swing",
+    "name": "Swing",
+    "slug": "swing",
+    "parent": null,
+    "count": 10,
+    "description": "Swing — 10 products in HTC catalogue.",
+    "image": "/images/categories/swing.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/swing/"
+  },
+  {
+    "id": "table",
+    "name": "Table",
+    "slug": "table",
+    "parent": null,
+    "count": 25,
+    "description": "Table — 25 products in HTC catalogue.",
+    "image": "/images/categories/table.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/table/"
+  },
+  {
+    "id": "tv-unit",
+    "name": "Tv Unit",
+    "slug": "tv-unit",
+    "parent": null,
+    "count": 16,
+    "description": "Tv Unit — 16 products in HTC catalogue.",
+    "image": "/images/categories/tv-unit.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/tv-unit/"
+  },
+  {
+    "id": "unit",
+    "name": "Unit",
+    "slug": "unit",
+    "parent": null,
+    "count": 16,
+    "description": "Unit — 16 products in HTC catalogue.",
+    "image": "/images/categories/unit.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/unit/"
+  },
+  {
+    "id": "utility",
+    "name": "Utility",
+    "slug": "utility",
+    "parent": null,
+    "count": 46,
+    "description": "Utility — 46 products in HTC catalogue.",
+    "image": "/images/categories/utility.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/utility/"
+  },
+  {
+    "id": "visitor-chair",
+    "name": "Visitor Chair",
+    "slug": "visitor-chair",
+    "parent": null,
+    "count": 31,
+    "description": "Visitor Chair — 31 products in HTC catalogue.",
+    "image": "/images/categories/visitor-chair.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/visitor-chair/"
+  },
+  {
+    "id": "wardrobe",
+    "name": "Wardrobe",
+    "slug": "wardrobe",
+    "parent": null,
+    "count": 10,
+    "description": "Wardrobe — 10 products in HTC catalogue.",
+    "image": "/images/walnut-storage.webp",
+    "sourceUrl": "https://htcfurniture.in/product-category/wardrobe/"
+  },
+  {
+    "id": "wardrobe-2d",
+    "name": "Wardrobe 2D",
+    "slug": "wardrobe-2d",
+    "parent": null,
+    "count": 1,
+    "description": "Wardrobe 2D — 1 products in HTC catalogue.",
+    "image": "/images/categories/wardrobe-2d.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/wardrobe-2d/"
+  },
+  {
+    "id": "wardrobe-3d",
+    "name": "Wardrobe 3D",
+    "slug": "wardrobe-3d",
+    "parent": null,
+    "count": 2,
+    "description": "Wardrobe 3D — 2 products in HTC catalogue.",
+    "image": "/images/categories/wardrobe-3d.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/wardrobe-3d/"
+  },
+  {
+    "id": "wardrobe-4d",
+    "name": "Wardrobe 4D",
+    "slug": "wardrobe-4d",
+    "parent": null,
+    "count": 1,
+    "description": "Wardrobe 4D — 1 products in HTC catalogue.",
+    "image": "/images/categories/wardrobe-4d.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/wardrobe-4d/"
+  },
+  {
+    "id": "wardrobe-5d",
+    "name": "Wardrobe 5D",
+    "slug": "wardrobe-5d",
+    "parent": null,
+    "count": 6,
+    "description": "Wardrobe 5D — 6 products in HTC catalogue.",
+    "image": "/images/categories/wardrobe-5d.jpg",
+    "sourceUrl": "https://htcfurniture.in/product-category/wardrobe-5d/"
+  }
+]
