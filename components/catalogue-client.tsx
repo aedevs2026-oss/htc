@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Search, SlidersHorizontal, X, ArrowUpRight, PackageSearch } from "lucide-react";
 
-type Product = { id:number|string; slug?:string; name:string; sku?:string; price?:number|null; regularPrice?:number|null; category?:string; categories?:string[]; image?:string|null; images?:{src:string;alt?:string}[]; description?:string; sourceUrl?:string|null; stockStatus?:string; isFeatured?:boolean };
+import type { CatalogProduct as Product } from "@/lib/types/catalog";
 const money = (n:number) => new Intl.NumberFormat("en-IN", { style:"currency", currency:"INR", maximumFractionDigits:0 }).format(n);
 export function CatalogueClient({ products, categories, initialCategory = "All furniture" }: { products:Product[]; categories:{name:string;count?:number;slug?:string}[]; initialCategory?: string }) {
  const [query,setQuery]=useState(""); const [category,setCategory]=useState(initialCategory); const [sort,setSort]=useState("featured"); const [min,setMin]=useState(""); const [max,setMax]=useState(""); const [filtersOpen,setFiltersOpen]=useState(false);
