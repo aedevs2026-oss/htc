@@ -999,3 +999,214 @@ img { display: block; }
 @keyframes dealerFadeIn { from { opacity:0; } to { opacity:1; } }
 @media(max-width:850px) { .product-detail-copy { position:static; } }
 @media(max-width:560px) { .dealer-location-modal { padding:28px 20px 22px; } .product-card .product-info { padding:12px 10px; } .product-meta-row span { display:none; } .product-card .product-description { font-size:9px; } }
+
+/* Homepage — mobile layout (overrides later refinement passes) */
+.imported-image-media,
+.swatch-image-media,
+.room-card-image { object-fit: cover; }
+.imported-image-media { object-position: center 42%; }
+.swatch-image-media { object-position: center; }
+.room-card-image { object-position: center 48%; }
+
+@media (max-width: 900px) {
+  .home-page .section-heading { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .home-page .section-heading .heading-link { max-width: none; white-space: nowrap; }
+}
+
+@media (max-width: 640px) {
+  .home-page .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    min-height: calc(100svh - 88px);
+    max-height: none;
+    padding-bottom: 22px;
+  }
+  .home-page .hero-image {
+    object-position: 72% 38%;
+    filter: saturate(0.95) contrast(1.03);
+  }
+  .home-page .hero-shade {
+    background:
+      linear-gradient(0deg, rgba(248, 246, 240, 0.98) 0%, rgba(248, 246, 240, 0.9) 38%, rgba(248, 246, 240, 0.45) 62%, rgba(248, 246, 240, 0.08) 100%),
+      linear-gradient(90deg, rgba(248, 246, 240, 0.92) 0%, rgba(248, 246, 240, 0.55) 55%, transparent 100%);
+  }
+  .home-page .hero-content {
+    width: 100%;
+    padding-top: clamp(48px, 14vw, 72px);
+    padding-bottom: 8px;
+  }
+  .home-page .hero-content h1 {
+    max-width: 11ch;
+    font-size: clamp(42px, 12.5vw, 58px);
+    line-height: 0.95;
+  }
+  .home-page .hero-copy {
+    max-width: 34ch;
+    margin: 14px 0 18px;
+    font-size: 13px;
+    line-height: 1.65;
+  }
+  .home-page .button-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .home-page .button-row .button {
+    width: 100%;
+    justify-content: center;
+  }
+  .home-page .hero-proof {
+    flex-wrap: wrap;
+    gap: 8px 0;
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(18, 61, 43, 0.12);
+  }
+  .home-page .hero-proof div {
+    flex: 1 1 30%;
+    min-width: 0;
+    padding: 0 10px 0 0;
+    border-left: 0;
+  }
+  .home-page .hero-proof div:nth-child(2) {
+    padding-inline: 10px;
+    border-left: 1px solid rgba(18, 61, 43, 0.12);
+    border-right: 1px solid rgba(18, 61, 43, 0.12);
+  }
+  .home-page .hero-proof strong { font-size: 17px; }
+  .home-page .hero-proof span { font-size: 9px; line-height: 1.35; }
+
+  .home-page .benefit-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding-block: 10px;
+  }
+  .home-page .benefit-grid > div {
+    min-height: 0;
+    padding: 12px 4px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .home-page .benefit-grid > div:last-child {
+    grid-column: auto;
+    border-bottom: 0;
+  }
+  .home-page .benefit-grid > div:nth-child(odd) { border-right: 0; }
+
+  .home-page .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .home-page .category-grid .category-card {
+    height: auto !important;
+    aspect-ratio: 0.82 / 1;
+    min-height: 0;
+  }
+  .home-page .category-grid .category-card > img {
+    object-fit: cover;
+    object-position: center 55%;
+  }
+
+  .home-page .imported-image {
+    min-height: min(52vw, 280px);
+    max-height: 320px;
+  }
+  .home-page .imported-copy .button { width: 100%; justify-content: center; }
+  .home-page .imported-points {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .home-page .home-brand-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .home-page .home-brand-grid .brand-icon-card {
+    min-height: 64px;
+    padding: 10px 8px;
+  }
+  .home-page .home-brand-grid .brand-icon-card img {
+    width: auto !important;
+    max-width: 100%;
+    height: 44px !important;
+    object-fit: contain;
+  }
+
+  .home-page .room-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .home-page .room-grid .room-card {
+    height: auto !important;
+    aspect-ratio: 0.88 / 1;
+    min-height: 0;
+  }
+  .home-page .room-grid .room-card:last-child {
+    grid-column: span 2;
+    aspect-ratio: 2 / 1;
+    min-height: 150px;
+  }
+
+  .home-page .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 10px;
+  }
+  .home-page .product-grid .product-card .product-open,
+  .home-page .product-grid .product-open {
+    opacity: 1;
+    transform: none;
+  }
+  .home-page .product-grid .product-image > img {
+    padding: 8px;
+  }
+
+  .home-page .dealer-image {
+    min-height: 220px;
+    max-height: 280px;
+  }
+  .home-page .dealer-image img {
+    object-position: center 40%;
+  }
+  .home-page .dealer-copy .button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-page .customise-copy .button {
+    width: 100%;
+    justify-content: center;
+  }
+  .home-page .swatch-image {
+    min-height: min(48vw, 240px);
+    max-height: 280px;
+  }
+  .home-page .customise-steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .home-page .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-page .stats-grid > div {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+    padding: 14px 0;
+  }
+  .home-page .stats-grid > div:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .home-page .newsletter-inner h2 {
+    font-size: clamp(28px, 8vw, 34px);
+  }
+}
+
+@media (max-width: 640px) and (max-height: 700px) {
+  .home-page .hero-section {
+    min-height: 620px;
+  }
+}

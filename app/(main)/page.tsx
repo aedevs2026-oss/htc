@@ -27,9 +27,9 @@ export default async function HomePage() {
   const stats = site.heroStats;
 
   return (
-    <>
+    <div className="home-page">
       <section className="hero-section">
-        <Image src="/images/living-room-hero.webp" alt="Luxury cream sofa in a warm contemporary living room" fill priority className="hero-image" sizes="100vw" />
+        <Image src="/images/living-room-hero.webp" alt="Luxury cream sofa in a warm contemporary living room" fill priority className="hero-image" sizes="(max-width: 640px) 100vw, 100vw" />
         <div className="hero-shade" />
         <div className="site-container hero-content">
           <p className="eyebrow">Imported furniture for modern living</p>
@@ -45,8 +45,6 @@ export default async function HomePage() {
             <div><strong>{stats.dealers}</strong><span>Dealer partners</span></div>
           </div>
         </div>
-        <div className="hero-side-note">Furniture<br />for a better<br />tomorrow</div>
-        <div className="hero-pagination"><span className="pagination-active">01</span><span>02</span><span>03</span><span className="pagination-line" /></div>
       </section>
 
       <section className="benefit-strip">
@@ -74,7 +72,7 @@ export default async function HomePage() {
           <Link href="/collections" className="button button-dark">Explore collections <ArrowRight size={16} /></Link>
         </div>
         <div className="imported-image">
-          <Image src="/images/luxury-living-editorial.webp" alt="Luxury living room with sculptural cream sofa, caramel leather chair and natural stone finishes" fill sizes="(max-width: 768px) 100vw, 50vw" />
+          <Image src="/images/luxury-living-editorial.webp" alt="Luxury living room with sculptural cream sofa, caramel leather chair and natural stone finishes" fill sizes="(max-width: 640px) 100vw, 50vw" className="imported-image-media" />
         </div>
         <div className="imported-points">
           <div><Globe2 /><span>Exclusive global brands</span></div>
@@ -86,7 +84,7 @@ export default async function HomePage() {
 
       <section className="brand-strip site-container">
         <SectionHeading eyebrow="A world of design" title="Our global brands" link="/collections" linkText="Explore brands" compact />
-        <div className="brand-logos brand-icon-grid">{brands.map((brand) => <div className="brand-icon-card" key={brand.name} title={brand.name}><Image src={`/brand/brands/${brand.src}`} alt={brand.name} width={88} height={80} /><span className="sr-only">{brand.name}</span></div>)}</div>
+        <div className="brand-logos brand-icon-grid home-brand-grid">{brands.map((brand) => <div className="brand-icon-card" key={brand.name} title={brand.name}><Image src={`/brand/brands/${brand.src}`} alt={brand.name} width={88} height={80} sizes="(max-width: 640px) 40vw, 88px" /><span className="sr-only">{brand.name}</span></div>)}</div>
       </section>
 
       <section className="section room-section">
@@ -95,7 +93,7 @@ export default async function HomePage() {
           <div className="room-grid">
             {rooms.map((room) => (
               <Link href={room.href} className="room-card" key={room.title}>
-                <Image src={`/images/${room.image}.webp`} alt={room.title} fill sizes="(max-width: 768px) 50vw, 20vw" />
+                <Image src={`/images/${room.image}.webp`} alt={room.title} fill sizes="(max-width: 640px) 50vw, 20vw" className="room-card-image" />
                 <span className="room-overlay" />
                 <span className="room-card-copy"><b>{room.title}</b><small>{room.desc}</small></span>
                 <span className="round-arrow"><ArrowRight size={15} /></span>
@@ -123,7 +121,7 @@ export default async function HomePage() {
           <p>Choose materials, colours and finishes to create a piece that feels right for your space.</p>
           <Link href="/contact" className="button button-gold">Start a consultation <ArrowRight size={16} /></Link>
         </div>
-        <div className="swatch-image"><Image src="/images/materials-swatches.webp" alt="Curated upholstery and wood finish samples" fill sizes="(max-width: 768px) 100vw, 50vw" /></div>
+        <div className="swatch-image"><Image src="/images/materials-swatches.webp" alt="Curated upholstery and wood finish samples" fill sizes="(max-width: 640px) 100vw, 50vw" className="swatch-image-media" /></div>
         <div className="customise-steps">
           <div><span>01</span> Choose material</div><div><span>02</span> Select colour</div><div><span>03</span> Confirm dimensions</div><div><span>04</span> Request a quote</div>
         </div>
@@ -157,6 +155,6 @@ export default async function HomePage() {
           <form className="newsletter-form" action="/contact"><label className="sr-only" htmlFor="newsletter-email">Email address</label><input id="newsletter-email" name="email" type="email" placeholder="Your email address" required /><button type="submit" aria-label="Subscribe"><ArrowRight size={18} /></button></form>
         </div>
       </section>
-    </>
+    </div>
   );
 }
