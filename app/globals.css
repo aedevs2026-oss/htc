@@ -1321,3 +1321,269 @@ img { display: block; }
     max-width: 100%;
   }
 }
+
+
+/* HTC admin workspace refinement */
+.admin-secure-pill{display:inline-flex;align-items:center;padding:7px 12px;border:1px solid #d8e1d7;border-radius:999px;background:#f1f7f0;color:#326044;font-size:11px;font-weight:700;letter-spacing:.04em}
+.admin-dashboard-total{display:block;margin:16px 0;font-family:Georgia,serif;font-size:clamp(28px,4vw,42px);color:#342a1d}
+.admin-activity-list{list-style:none;margin:16px 0 0;padding:0}.admin-activity-list li{display:flex;justify-content:space-between;gap:18px;padding:13px 0;border-bottom:1px solid #eee7dd}.admin-activity-list li span{display:grid;gap:4px}.admin-activity-list small,.admin-activity-list time{color:#837969;font-size:11px}.admin-activity-list time{text-align:right;white-space:nowrap}
+.admin-table-wrap{width:100%;overflow:auto}.admin-data-table{width:100%;border-collapse:collapse;font-size:12px}.admin-data-table th,.admin-data-table td{padding:13px 12px;border-bottom:1px solid #eee8de;text-align:left;white-space:nowrap}.admin-data-table th{background:#faf8f4;color:#6f6250;font-size:10px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:760px){.admin-activity-list li{display:grid;gap:6px}.admin-activity-list time{text-align:left}}
+
+
+/* Furniture catalogue cards — responsive product-led layout */
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 22px;
+}
+.catalogue-product-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e8dfd1;
+  border-radius: 13px;
+  background: #fffefa;
+  box-shadow: 0 8px 24px rgba(48, 38, 24, .045);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.catalogue-product-card:hover {
+  transform: translateY(-4px);
+  border-color: #d6c6ae;
+  box-shadow: 0 16px 34px rgba(48, 38, 24, .10);
+}
+.catalogue-product-card .product-image {
+  position: relative;
+  display: block;
+  flex: none;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #eee9df;
+}
+.catalogue-product-card .product-image img {
+  object-fit: contain;
+  object-position: center;
+  padding: 12px;
+  mix-blend-mode: multiply;
+  transition: transform .45s ease;
+}
+.catalogue-product-card:hover .product-image img { transform: scale(1.035); }
+.catalogue-product-card .product-tag {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  left: 14px;
+  max-width: calc(100% - 28px);
+  overflow: hidden;
+  padding: 8px 10px;
+  border: 1px solid rgba(220, 207, 187, .9);
+  border-radius: 2px;
+  background: rgba(255, 253, 248, .96);
+  color: #6c4b25;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  line-height: 1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.catalogue-product-card .product-open {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 2;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,.4);
+  border-radius: 50%;
+  background: #123d2b;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(0,0,0,.16);
+  transition: transform .2s ease, background .2s ease;
+}
+.catalogue-product-card:hover .product-open { transform: translate(2px,-2px); background: #09281d; }
+.catalogue-product-card .product-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+  min-width: 0;
+  padding: 18px 17px 16px;
+  background: #fffefa;
+}
+.catalogue-product-card .product-info > p {
+  min-height: 12px;
+  margin: 0 0 12px;
+  color: #a27643;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.catalogue-product-card .catalogue-product-title {
+  display: block;
+  min-height: 48px;
+  margin: 0 0 14px;
+  color: #173b2c;
+  font-family: var(--serif);
+  font-size: clamp(19px, 1.55vw, 23px);
+  font-weight: 400;
+  letter-spacing: -.025em;
+  line-height: 1.18;
+  text-decoration: none;
+}
+.catalogue-product-card .catalogue-product-title:hover { color: #9a7847; }
+.catalogue-product-card .catalogue-price {
+  display: block;
+  margin: auto 0 13px;
+  color: #122e24;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.3;
+}
+.catalogue-product-card .catalogue-enquiry-link {
+  display: flex;
+  width: 100%;
+  min-height: 42px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 2px;
+  padding: 0 13px;
+  border: 1px solid #d9c5a5;
+  border-radius: 3px;
+  background: #fffdf8;
+  color: #765226;
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: color .2s ease, background .2s ease, border-color .2s ease;
+}
+.catalogue-product-card .catalogue-enquiry-link:hover {
+  border-color: #123d2b;
+  background: #123d2b;
+  color: #fff;
+}
+.catalogue-product-card .catalogue-enquiry-link svg { flex: none; }
+@media (max-width: 1100px) {
+  .listing-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+}
+@media (max-width: 760px) {
+  .listing-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 13px 11px; }
+  .catalogue-product-card { border-radius: 10px; }
+  .catalogue-product-card .product-image { aspect-ratio: .94 / 1; }
+  .catalogue-product-card .product-image img { padding: 7px; }
+  .catalogue-product-card .product-tag { top: 9px; left: 9px; max-width: calc(100% - 18px); padding: 7px 8px; font-size: 8px; }
+  .catalogue-product-card .product-open { right: 9px; bottom: 9px; width: 32px; height: 32px; }
+  .catalogue-product-card .product-info { padding: 12px 10px 11px; }
+  .catalogue-product-card .product-info > p { min-height: 22px; margin-bottom: 7px; font-size: 8px; letter-spacing: .09em; }
+  .catalogue-product-card .catalogue-product-title { min-height: 40px; margin-bottom: 9px; font-size: clamp(16px, 4.1vw, 19px); line-height: 1.12; }
+  .catalogue-product-card .catalogue-price { margin-bottom: 10px; font-size: 13px; }
+  .catalogue-product-card .catalogue-enquiry-link { min-height: 38px; padding: 0 9px; font-size: 10px; }
+}
+@media (max-width: 360px) {
+  .listing-grid { gap: 10px 8px; }
+  .catalogue-product-card .product-info { padding-inline: 8px; }
+  .catalogue-product-card .catalogue-product-title { font-size: 15px; }
+  .catalogue-product-card .catalogue-enquiry-link { font-size: 9px; }
+}
+
+/* Mobile catalogue search — compact pill treatment from supplied reference */
+@media (max-width: 760px) {
+  .catalogue-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    margin: 16px 0 14px;
+  }
+  .catalogue-search {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 48px;
+    min-height: 48px;
+    gap: 9px;
+    padding: 0 9px 0 14px;
+    border: 1px solid #d9d5c9;
+    border-radius: 999px;
+    background: #fffefa;
+    color: #173d2d;
+    box-shadow: 0 2px 7px rgba(35, 43, 32, .035);
+  }
+  .catalogue-search > svg {
+    width: 17px;
+    height: 17px;
+    flex: 0 0 17px;
+    stroke-width: 1.8;
+  }
+  .catalogue-search input {
+    width: 0;
+    min-width: 0;
+    height: 100%;
+    flex: 1 1 auto;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: -.01em;
+  }
+  .catalogue-search input::placeholder {
+    color: #8b8c84;
+    opacity: 1;
+  }
+  .catalogue-search kbd {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    place-items: center;
+    padding: 0;
+    border: 1px solid #e4dfd3;
+    border-radius: 7px;
+    background: #fffefa;
+    color: #8b795d;
+    font-size: 14px;
+    line-height: 1;
+    box-shadow: none;
+  }
+  .catalogue-control-actions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    width: 100%;
+    gap: 9px;
+  }
+  .sort-select {
+    min-width: 0;
+    gap: 6px;
+    font-size: 10px;
+  }
+  .sort-select select {
+    min-width: 0;
+    max-width: none;
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+  .filter-button {
+    min-height: 40px;
+    padding: 0 12px;
+    white-space: nowrap;
+    font-size: 11px;
+  }
+}
+@media (max-width: 380px) {
+  .catalogue-search { height: 46px; min-height: 46px; padding-left: 12px; }
+  .catalogue-search input { font-size: 11px; }
+  .catalogue-search kbd { width: 28px; height: 28px; flex-basis: 28px; }
+}
