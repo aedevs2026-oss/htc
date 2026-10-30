@@ -1,14 +1,8 @@
 import { redirect } from "next/navigation";
 import { AdminShell } from "@/components/admin/admin-shell";
-import { createClient } from "@/lib/supabase/server";
+import { requireAdmin } from "@/lib/supabase/admin-guard";
 
-export default async function AdminPanelLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  const supabase = await createClient();
-  if (!supabase) redirect("/admin/login?error=missing_supabase");
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-  if (!user) redirect("/admin/login");
-
-  return <AdminShell email={user.email}>{children}</AdminShell>;
+export default async function AdminPanelLayout({children}:{children:React.ReactNode}) {
+ try { const {user}=await requireAdmin(); return <AdminShell email={user.email}>{children}</AdminShell>; }
+ catch { redirect("/admin/login"); }
 }
