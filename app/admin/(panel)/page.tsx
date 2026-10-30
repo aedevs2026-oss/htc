@@ -1,6 +1,7 @@
 import Link from "next/link";
 import {Package,Tags,IndianRupee,ImageIcon,Star,Activity,ArrowUpRight} from "lucide-react";
 import {requireAdmin} from "@/lib/supabase/admin-guard";
+export const dynamic = "force-dynamic";
 const money=(n:number)=>new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(n);
 export default async function AdminDashboardPage(){
  const {supabase,user}=await requireAdmin();
