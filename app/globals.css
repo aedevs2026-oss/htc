@@ -1587,3 +1587,41 @@ img { display: block; }
   .catalogue-search input { font-size: 11px; }
   .catalogue-search kbd { width: 28px; height: 28px; flex-basis: 28px; }
 }
+
+/* Editorial page hero image quality and responsive framing */
+.page-hero {
+  min-height: 520px;
+  height: clamp(500px, 43vw, 640px);
+  background: #d8cbbb;
+}
+.page-hero > img {
+  object-fit: cover;
+  object-position: center 52%;
+  transform: scale(1.005);
+}
+.page-hero-overlay {
+  background:
+    linear-gradient(90deg, rgba(248,246,240,.94) 0%, rgba(248,246,240,.82) 27%, rgba(248,246,240,.45) 48%, rgba(8,25,18,.04) 78%),
+    linear-gradient(0deg, rgba(8,25,18,.16), transparent 34%);
+}
+.rooms-hero > img { object-position: center 56%; }
+.collections-hero > img { object-position: center 50%; }
+.dealer-page-hero > img { object-position: center 52%; }
+.about-hero > img { object-position: center 54%; }
+.contact-hero > img { object-position: center 50%; }
+@media (max-width: 760px) {
+  .page-hero { min-height: 500px; height: auto; align-items: flex-end; }
+  .page-hero > img { object-position: center center; }
+  .page-hero-overlay {
+    background: linear-gradient(0deg, rgba(248,246,240,.98) 0%, rgba(248,246,240,.88) 40%, rgba(248,246,240,.24) 78%, rgba(8,25,18,.02) 100%);
+  }
+  .page-hero-content { width: 100%; padding-block: 210px 34px; }
+  .page-hero h1 { max-width: 100%; font-size: clamp(42px, 11vw, 58px); line-height: 1.02; }
+  .page-hero-content > p:not(.eyebrow):not(.breadcrumbs) { max-width: 100%; font-size: 12px; line-height: 1.7; }
+  .breadcrumbs { margin-top: 22px; }
+}
+@media (max-width: 380px) {
+  .page-hero { min-height: 470px; }
+  .page-hero-content { padding-top: 185px; }
+  .page-hero h1 { font-size: 41px; }
+}

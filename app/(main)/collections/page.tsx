@@ -16,7 +16,7 @@ export default async function CollectionsPage() {
   return (
     <>
       <section className="page-hero collections-hero">
-        <Image src="/images/showroom.webp" alt="A curated imported furniture collection in a warm showroom" fill priority sizes="100vw" />
+        <Image src="/images/luxury-living-editorial.webp" alt="Curated luxury furniture collection in a refined contemporary interior" fill priority sizes="100vw" />
         <div className="page-hero-overlay" />
         <div className="site-container page-hero-content">
           <p className="eyebrow">A world of considered design</p>
