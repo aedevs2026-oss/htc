@@ -1,34 +1,42 @@
-# HTC Furniture Admin Panel + Supabase
+# HTC Furniture Admin Panel and Supabase setup
 
-## Included modules
-- Admin sign-in via Supabase Auth (server-verified user session and secure cookie refresh)
-- RBAC allow-list in `admin_users`
-- Dashboard metrics and activity log
-- Products CRUD API, price/stock/publish/feature flags, description, categories, image gallery JSON
-- Categories CRUD API
-- Homepage/store settings key-value API
-- Admin audit trail
-- Existing admin UI: products, categories, homepage highlights, catalogue sync
+This branch adds a secure administrative layer and PostgreSQL schema to the existing Next.js 15 + React 19 site.
 
-## Secure setup
-1. Create a Supabase project (PostgreSQL).
-2. Run `supabase/schema.sql` in Supabase SQL Editor.
-3. Create a user in Supabase Authentication → Users (email/password; enable MFA in production).
-4. Copy the user's UUID and provision them as the first owner:
+## Modules
+- Supabase Auth login using `@supabase/ssr` cookie-managed access/refresh sessions.
+- Server-side session verification using `auth.getUser()`.
+- Explicit RBAC allow-list via `public.admin_users`.
+- Dashboard metrics and latest audit events.
+- Product listing/editor already present; added product create form and CRUD JSON APIs.
+- Category editor and CRUD APIs.
+- Homepage highlight settings persisted in Postgres `site_settings`.
+- Business / SEO / social / storefront settings UI.
+- Admin audit trail view.
+
+## Supabase setup
+1. Create a Supabase project.
+2. Run all SQL in `supabase/schema.sql`.
+3. Create an auth user in Supabase Authentication → Users.
+4. Provision the first owner using that auth user's UUID:
    `insert into public.admin_users(user_id,role) values ('AUTH-USER-UUID','owner');`
-5. Set environment variables locally and in Vercel. Do not commit .env files:
-   `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`.
-6. Run `npm run seed:supabase` to import the local JSON dump into Postgres.
+5. Configure Vercel/local env:
+   - `NEXT_PUBLIC_SUPABASE_URL`
+   - `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+   - `SUPABASE_SERVICE_ROLE_KEY` (server only, never expose with NEXT_PUBLIC_)
+6. Run `npm run seed:supabase` to import `data/products.json` and `data/categories.json` in batches.
 
-Supabase Auth uses access/refresh tokens managed in secure HttpOnly cookies via `@supabase/ssr`. The middleware calls `auth.getUser()` to validate the session; it does not trust an unverified JWT from localStorage. API routes re-check the authenticated user and the admin allow-list on every write. This is preferable to issuing a second app JWT, which would duplicate the session system.
+Supabase Auth stores/refreshes sessions through secure cookie handling in `@supabase/ssr`. The middleware's `auth.getUser()` verifies the current user and all admin server actions/API handlers independently check membership in `admin_users`. This intentionally avoids minting a second bespoke JWT: Supabase JWTs are already signed and validated by Supabase; duplicating that token would increase session complexity. Use HTTPS in production, configure MFA for admin accounts, and keep service-role credentials server-only.
 
-## Import / dump
-The seed utility imports `data/products.json` and `data/categories.json` in batches. The product dump in the repo is the source snapshot, not a database backup; export a pg_dump from Supabase after live migration for a full database backup.
+## API routes
+- `GET/POST /api/admin/products`
+- `PATCH/DELETE /api/admin/products/:id`
+- `GET/POST /api/admin/categories`
+- `PATCH/DELETE /api/admin/categories/:slug`
+- `GET /api/admin/dashboard`
+- `GET/PUT /api/admin/settings`
+- `GET /api/admin/audit`
 
-## Go live checklist
-- Add all authorised admins to `admin_users`.
-- Keep RLS enabled; never use service role from browser/client code.
-- Enforce MFA for owner/admin accounts in Supabase Auth.
-- Configure SMTP, password reset URL and allowed redirect URLs.
-- Rotate keys if accidentally disclosed.
-- Verify DB backups and retention policies.
+## Important
+The seed utility imports the repository's local JSON product/category catalogue into Supabase Postgres. Run it after setting env variables. This is a data import, not a pg_dump backup. Export a real PostgreSQL backup from Supabase after migration.
+
+Never commit `.env.local`, Supabase service keys, user passwords, or session tokens. Admin API routes verify auth and admin allow-list server-side. Apply Supabase schema before enabling the panel.
