@@ -1625,3 +1625,12 @@ img { display: block; }
   .page-hero-content { padding-top: 185px; }
   .page-hero h1 { font-size: 41px; }
 }
+
+/* Enquiry and dealer directory states */
+.enquiry-success,.enquiry-error{display:flex;align-items:center;gap:8px;margin-top:14px;padding:12px 14px;font-size:13px;border-radius:3px}
+.enquiry-success{color:#164d36;background:#eaf3ed;border:1px solid #c8dfd0}
+.enquiry-error{color:#9b2c2c;background:#fff0ef;border:1px solid #f1c8c4}
+.dealer-empty{display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:32px;background:#f3f0e8;color:#34483c}
+.dealer-authorised{display:inline-flex;align-items:center;gap:6px;color:#41634f;font-size:11px;margin:4px 0 12px}
+.dealer-location-card a{display:inline-flex;align-items:center;gap:6px;margin:5px 12px 0 0}
+@media(max-width:640px){.dealer-empty{padding:22px}.enquiry-success,.enquiry-error{align-items:flex-start}}

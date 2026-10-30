@@ -121,7 +121,7 @@ export default async function HomePage() {
           <p>Choose materials, colours and finishes to create a piece that feels right for your space.</p>
           <Link href="/contact" className="button button-gold">Start a consultation <ArrowRight size={16} /></Link>
         </div>
-        <div className="swatch-image"><Image src="/images/materials-swatches.webp" alt="Curated upholstery and wood finish samples" fill sizes="(max-width: 640px) 100vw, 50vw" className="swatch-image-media" /></div>
+        <div className="swatch-image"><Image src="/images/upholstery-detail.webp" alt="High-detail close-up of premium upholstery fabric and furniture finish samples" fill sizes="(max-width: 640px) 100vw, 50vw" className="swatch-image-media" /></div>
         <div className="customise-steps">
           <div><span>01</span> Choose material</div><div><span>02</span> Select colour</div><div><span>03</span> Confirm dimensions</div><div><span>04</span> Request a quote</div>
         </div>
