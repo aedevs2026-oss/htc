@@ -19,18 +19,18 @@ export async function saveSiteConfigAction(input:SiteConfig) {
  const rows=Object.entries(values).map(([key,value])=>({key,value,updated_at:new Date().toISOString()}));
  const {error}=await supabase.from("site_settings").upsert(rows,{onConflict:"key"}); if(error) throw new Error(error.message);
  await supabase.from("admin_audit_log").insert({actor_id:user.id,action:"homepage.settings.update",entity_type:"site_settings"});
- ["/admin/homepage","/","/collections","/furniture"].forEach(revalidatePath);
+ ["/admin/homepage","/","/collections","/furniture"].forEach((path) => revalidatePath(path));
 }
 export async function setFeaturedProductAction(wpId:number,featured:boolean) {
  const {supabase,user}=await requireAdmin();
  const {error}=await supabase.from("products").update({is_featured:featured,updated_at:new Date().toISOString()}).eq("wp_id",wpId); if(error) throw new Error(error.message);
  await supabase.from("admin_audit_log").insert({actor_id:user.id,action:"product.featured",entity_type:"product",entity_id:String(wpId),details:{featured}});
- ["/admin/homepage","/","/collections"].forEach(revalidatePath);
+ ["/admin/homepage","/","/collections"].forEach((path) => revalidatePath(path));
 }
 export async function updateCategoryAction(input:{slug:string;name:string;description:string;imagePath:string;sortOrder:string}) {
  const {supabase,user}=await requireAdmin();
  const {error}=await supabase.from("categories").update({name:input.name.slice(0,160),description:input.description.slice(0,4000),image_path:input.imagePath.slice(0,1000)||null,sort_order:Number(input.sortOrder)||0,updated_at:new Date().toISOString()}).eq("slug",input.slug);
  if(error) throw new Error(error.message);
  await supabase.from("admin_audit_log").insert({actor_id:user.id,action:"category.update",entity_type:"category",entity_id:input.slug});
- ["/admin/categories","/furniture","/","/collections"].forEach(revalidatePath);
+ ["/admin/categories","/furniture","/","/collections"].forEach((path) => revalidatePath(path));
 }
