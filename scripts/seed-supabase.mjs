@@ -64,19 +64,25 @@ const categoryRows = await Promise.all(categories.map(async (c, index) => ({
 const { error: catError } = await supabase.from("categories").upsert(categoryRows, { onConflict: "slug" });
 if (catError) throw catError;
 
-const productRows = await Promise.all(products.map(async (p) => {
-  const imageList = await Promise.all((p.images || []).map(async (image) => ({ ...image, src: await uploadLocalImage(image.src) })));
-  const imagePath = await uploadLocalImage(p.image || imageList[0]?.src);
-  return {
-    wp_id: p.id, name: p.name, display_name: p.displayName || p.name, slug: p.slug || null, sku: p.sku || p.name,
-    price: p.price ?? null, regular_price: p.regularPrice ?? p.price ?? null, sale_price: p.salePrice ?? null,
-    currency: p.currency || "INR", primary_category: p.category || p.categories?.[0] || null,
-    categories: p.categories || [], category_slugs: p.categorySlugs || [], description: p.description || "",
-    short_description: p.shortDescription || "", brand: p.brand || "HTC", image_path: imagePath, images: imageList,
-    stock_status: p.stockStatus || "in_stock", source_url: p.sourceUrl || p.permalink || null,
-    is_featured: false, is_published: true, updated_at: new Date().toISOString(),
-  };
-}));
+const productRows = [];
+for (let start = 0; start < products.length; start += 25) {
+  const sourceBatch = products.slice(start, start + 25);
+  const rows = await Promise.all(sourceBatch.map(async (p) => {
+    const imageList = await Promise.all((p.images || []).map(async (image) => ({ ...image, src: await uploadLocalImage(image.src) })));
+    const imagePath = await uploadLocalImage(p.image || imageList[0]?.src);
+    return {
+      wp_id: p.id, name: p.name, display_name: p.displayName || p.name, slug: p.slug || null, sku: p.sku || p.name,
+      price: p.price ?? null, regular_price: p.regularPrice ?? p.price ?? null, sale_price: p.salePrice ?? null,
+      currency: p.currency || "INR", primary_category: p.category || p.categories?.[0] || null,
+      categories: p.categories || [], category_slugs: p.categorySlugs || [], description: p.description || "",
+      short_description: p.shortDescription || "", brand: p.brand || "HTC", image_path: imagePath, images: imageList,
+      stock_status: p.stockStatus || "in_stock", source_url: p.sourceUrl || p.permalink || null,
+      is_featured: false, is_published: true, updated_at: new Date().toISOString(),
+    };
+  }));
+  productRows.push(...rows);
+  console.log(`Prepared products with images ${Math.min(start + rows.length, products.length)}/${products.length}`);
+}
 for (let i = 0; i < productRows.length; i += 75) {
   const batch = productRows.slice(i, i + 75);
   const { error } = await supabase.from("products").upsert(batch, { onConflict: "wp_id" });
