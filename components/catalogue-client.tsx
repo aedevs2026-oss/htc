@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Search, SlidersHorizontal, X, ArrowUpRight, PackageSearch } from "lucide-react";
 import type { CatalogProduct as Product } from "@/lib/types/catalog";
 
-const money = (n: number) => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 });
+const money = (n: number) => new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(n);
 
 export function CatalogueClient({ products, categories, initialCategory = "All furniture", initialBrand = "All brands" }: {
   products: Product[];
