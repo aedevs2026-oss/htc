@@ -1,9 +1,9 @@
-import type { CatalogCategory, CatalogProduct } from "@/lib/types/catalog";
+import type { CatalogProduct } from "@/lib/types/catalog";
 import type { SiteConfig } from "@/lib/site-config";
 
 const FALLBACK_PRODUCT_IMAGE = "/images/sofa-product.webp";
 
-export function categoryImageSrc(category: Pick<CatalogCategory, "slug" | "name" | "image">) {
+export function categoryImageSrc(category: { slug: string; name: string; image?: string | null }) {
   const explicit: Record<string, string> = {
     sofa: "/images/category-living.webp", sofas: "/images/category-living.webp",
     bedroom: "/images/bedroom.webp", "bed-1-5": "/images/bed-product.webp", "bed-1-8": "/images/bed-product.webp",
@@ -27,10 +27,11 @@ export function categoryImageSrc(category: Pick<CatalogCategory, "slug" | "name"
   return "/images/category-premium.webp";
 }
 
+/** Return a safe local image path, preferring the primary image then gallery image. */
 export function productImageSrc(product: Pick<CatalogProduct, "image" | "images">) {
-  const candidate = product.image || product.images?.[0]?.src;
-  if (candidate?.startsWith("/") && !candidate.startsWith("//") && !candidate.startsWith("/images/catalogue/")) return candidate;
-  return FALLBACK_PRODUCT_IMAGE;
+  const candidates = [product.image, ...(product.images || []).map((image) => image?.src)];
+  const candidate = candidates.find((src): src is string => typeof src === "string" && src.startsWith("/") && !src.startsWith("//"));
+  return candidate || FALLBACK_PRODUCT_IMAGE;
 }
 
 export function formatInr(price: number | null | undefined) {
@@ -40,10 +41,7 @@ export function formatInr(price: number | null | undefined) {
 
 export function applyFeaturedFlags(products: CatalogProduct[], config: SiteConfig) {
   const ids = new Set(config.featuredProductIds.map(Number));
-  return products.map((p) => ({
-    ...p,
-    isFeatured: Boolean(p.isFeatured) || ids.has(Number(p.id)),
-  }));
+  return products.map((p) => ({ ...p, isFeatured: Boolean(p.isFeatured) || ids.has(Number(p.id)) }));
 }
 
 export function getFeaturedProducts(products: CatalogProduct[], limit = 8) {
@@ -63,56 +61,4 @@ export function getFeaturedProducts(products: CatalogProduct[], limit = 8) {
     if (out.length >= limit) break;
   }
   return out;
-}
-
-const CATEGORY_ALIASES: Record<string, string> = {
-  sofas: "Sofa",
-  sofa: "Sofa",
-  beds: "Bedroom",
-  bedroom: "Bedroom",
-  dining: "Dining",
-  recliners: "Sofa",
-  chairs: "Office Furniture",
-  storage: "Wardrobe",
-  office: "Office Furniture",
-  coffee: "Coffee Table",
-};
-
-export function resolveCategoryFilter(query: string | undefined, categories: CatalogCategory[]) {
-  if (!query) return "All furniture";
-  const decoded = decodeURIComponent(query).trim();
-  const alias = CATEGORY_ALIASES[decoded.toLowerCase()];
-  if (alias) return alias;
-  const exact = categories.find((c) => c.slug === decoded || c.name.toLowerCase() === decoded.toLowerCase());
-  if (exact) return exact.name;
-  const partial = categories.find((c) => c.name.toLowerCase().includes(decoded.toLowerCase()));
-  return partial?.name || "All furniture";
-}
-
-const HOME_CATEGORY_SLUGS = ["sofa", "bedroom", "dining", "office-furniture", "coffee-table", "wardrobe"];
-
-export function getHomeCategories(categories: CatalogCategory[], config: SiteConfig, limit = 6) {
-  const slugs = config.spotlightCategorySlugs.length ? config.spotlightCategorySlugs : HOME_CATEGORY_SLUGS;
-  const picked = slugs
-    .map((slug) => categories.find((c) => c.slug === slug))
-    .filter(Boolean) as CatalogCategory[];
-  if (picked.length >= limit) return picked.slice(0, limit);
-  const rest = [...categories].sort((a, b) => (b.count || 0) - (a.count || 0));
-  const seen = new Set(picked.map((c) => c.slug));
-  for (const cat of rest) {
-    if (seen.has(cat.slug)) continue;
-    picked.push(cat);
-    if (picked.length >= limit) break;
-  }
-  return picked;
-}
-
-export function getCollectionGroups(categories: CatalogCategory[], config: SiteConfig, limit = 4) {
-  return getHomeCategories(categories, { ...config, spotlightCategorySlugs: config.collectionSlugs.length ? config.collectionSlugs : config.spotlightCategorySlugs }, limit);
-}
-
-export function productsForCategory(products: CatalogProduct[], category: CatalogCategory, limit = 4) {
-  return products
-    .filter((p) => (p.categorySlugs || []).includes(category.slug) || p.category === category.name || p.categories?.includes(category.name))
-    .slice(0, limit);
 }
