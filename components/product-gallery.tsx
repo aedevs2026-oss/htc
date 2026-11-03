@@ -6,7 +6,7 @@ import type { CatalogImage } from "@/lib/types/catalog";
 
 const fallback = "/images/sofa-product.webp";
 export function ProductGallery({ name, images }: { name: string; images: CatalogImage[] }) {
-  const gallery = (images || []).filter((image) => image?.src?.startsWith("/") && !image.src.startsWith("//")).slice(0, 4);
+  const gallery = (images || []).filter((image) => image?.src?.startsWith("/") && !image.src.startsWith("//") && !image.src.startsWith("/images/catalogue/")).slice(0, 4);
   while (gallery.length < 4) gallery.push({ src: gallery[gallery.length - 1]?.src || fallback, alt: `${name} product view` });
   const [active, setActive] = useState(0);
   const selected = gallery[active] || gallery[0];

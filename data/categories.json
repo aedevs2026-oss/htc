@@ -6,7 +6,7 @@
     "parent": null,
     "count": 12,
     "description": "Comfort-focused recliner chairs and lounge seating from HTC.",
-    "image": "/images/catalogue/htc-01.webp"
+    "image": "/images/recliner-editorial.webp"
   },
   {
     "id": "dining-sets",
@@ -15,6 +15,6 @@
     "parent": null,
     "count": 6,
     "description": "Contemporary dining tables and coordinated chair sets from HTC.",
-    "image": "/images/catalogue/htc-05.webp"
+    "image": "/images/category-dining.webp"
   }
 ]
