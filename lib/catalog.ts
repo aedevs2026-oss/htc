@@ -5,6 +5,12 @@ import { applyFeaturedFlags } from "@/lib/catalog-helpers";
 import { getSiteConfig } from "@/lib/site-config";
 import { createClient } from "@/lib/supabase/server";
 
+// This is the complete approved public catalogue. The allow-list is applied
+// to Supabase as well as the JSON fallback so stale database rows never leak
+// into the storefront or admin catalogue.
+const APPROVED_PRODUCT_IDS = Array.from({ length: 18 }, (_, index) => 9001 + index);
+const APPROVED_CATEGORY_SLUGS = ["recliners", "dining-sets"];
+
 function mapProduct(row: Record<string, unknown>): CatalogProduct {
   return {
     id: row.wp_id as number,
@@ -43,14 +49,22 @@ function mapCategory(row: Record<string, unknown>): CatalogCategory {
   };
 }
 
+function jsonCatalog() {
+  return {
+    products: productData as CatalogProduct[],
+    categories: categoryData as CatalogCategory[],
+    source: "json" as const,
+  };
+}
+
 export async function getCatalog(): Promise<{ products: CatalogProduct[]; categories: CatalogCategory[]; source: "supabase" | "json" }> {
   const config = await getSiteConfig();
   const supabase = await createClient();
 
   if (supabase) {
     const [{ data: products }, { data: categories }] = await Promise.all([
-      supabase.from("products").select("*").eq("is_published", true).order("name"),
-      supabase.from("categories").select("*").order("name"),
+      supabase.from("products").select("*").eq("is_published", true).in("wp_id", APPROVED_PRODUCT_IDS).order("name"),
+      supabase.from("categories").select("*").in("slug", APPROVED_CATEGORY_SLUGS).order("name"),
     ]);
     if (products?.length) {
       return {
@@ -61,11 +75,7 @@ export async function getCatalog(): Promise<{ products: CatalogProduct[]; catego
     }
   }
 
-  return {
-    products: applyFeaturedFlags(productData as CatalogProduct[], config),
-    categories: categoryData as CatalogCategory[],
-    source: "json",
-  };
+  return { ...jsonCatalog(), products: applyFeaturedFlags(productData as CatalogProduct[], config) };
 }
 
 export async function getAdminCatalog() {
@@ -73,8 +83,8 @@ export async function getAdminCatalog() {
   const supabase = await createClient();
   if (supabase) {
     const [{ data: products }, { data: categories }] = await Promise.all([
-      supabase.from("products").select("*").order("updated_at", { ascending: false }),
-      supabase.from("categories").select("*").order("name"),
+      supabase.from("products").select("*").in("wp_id", APPROVED_PRODUCT_IDS).order("updated_at", { ascending: false }),
+      supabase.from("categories").select("*").in("slug", APPROVED_CATEGORY_SLUGS).order("name"),
     ]);
     if (products?.length) {
       return {
