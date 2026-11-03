@@ -29,7 +29,7 @@ export function categoryImageSrc(category: Pick<CatalogCategory, "slug" | "name"
 
 export function productImageSrc(product: Pick<CatalogProduct, "image" | "images">) {
   const candidate = product.image || product.images?.[0]?.src;
-  if (candidate?.startsWith("/") && !candidate.startsWith("//")) return candidate;
+  if (candidate?.startsWith("/") && !candidate.startsWith("//") && !candidate.startsWith("/images/catalogue/")) return candidate;
   return FALLBACK_PRODUCT_IMAGE;
 }
 
