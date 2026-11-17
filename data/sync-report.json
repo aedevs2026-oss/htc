@@ -1,0 +1,10 @@
+{
+  "source": "https://htcfurniture.in",
+  "syncedAt": "2026-10-24T13:05:03.993Z",
+  "products": 510,
+  "categories": 52,
+  "withPrice": 494,
+  "downloadedProductImages": 510,
+  "downloadedCategoryImages": 52,
+  "note": "Uses wp-json/wp/v2/product for metadata and /shop/ HTML for INR prices. Images saved under public/images/products and public/images/categories."
+}

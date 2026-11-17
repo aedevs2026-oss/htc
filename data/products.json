@@ -1,0 +1,992 @@
+[
+  {
+    "id": 9001,
+    "name": "Cloudline Single-Seater Sofa",
+    "displayName": "Cloudline Single-Seater Sofa",
+    "slug": "cloudline-single-seater-sofa",
+    "sku": "HTC-SF-001",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Sofa",
+    "categories": [
+      "Sofas",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "sofas"
+    ],
+    "image": "/products/Cloudline_Single-Seater_Sofa/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Cloudline_Single-Seater_Sofa/image_01.webp",
+        "alt": "Cloudline Single-Seater Sofa - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Cloudline_Single-Seater_Sofa/image_02.webp",
+        "alt": "Cloudline Single-Seater Sofa - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Cloudline_Single-Seater_Sofa/image_03.webp",
+        "alt": "Cloudline Single-Seater Sofa - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Cloudline_Single-Seater_Sofa/image_04.webp",
+        "alt": "Cloudline Single-Seater Sofa - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "Compact single-seater with a softly rounded profile, cushioned back and broad armrests. Its light neutral upholstery and contrasting lower base create a clean contemporary look.",
+    "shortDescription": "Compact single-seater with a softly rounded profile, cushioned back and broad armrests. Its light neutral upholstery and contrasting lower base create a clean contemporary look.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Light beige / taupe",
+    "visibleFeatures": "Single seat; cushioned back; broad armrests; compact profile",
+    "suggestedRoomOrUse": "Living room, reading corner",
+    "detailsToConfirm": "Upholstery type, frame material and dimensions to be confirmed"
+  },
+  {
+    "id": 9002,
+    "name": "Haven High-Back Recliner",
+    "displayName": "Haven High-Back Recliner",
+    "slug": "haven-high-back-recliner",
+    "sku": "HTC-RC-001",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/Haven_High-Back_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Haven_High-Back_Recliner/image_01.webp",
+        "alt": "Haven High-Back Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Haven_High-Back_Recliner/image_02.webp",
+        "alt": "Haven High-Back Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Haven_High-Back_Recliner/image_03.webp",
+        "alt": "Haven High-Back Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Haven_High-Back_Recliner/image_04.webp",
+        "alt": "Haven High-Back Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A generously cushioned recliner with a supportive high back, padded headrest, wide armrests and a deep seat for relaxed everyday lounging.",
+    "shortDescription": "A generously cushioned recliner with a supportive high back, padded headrest, wide armrests and a deep seat for relaxed everyday lounging.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Dark brown",
+    "visibleFeatures": "High back; padded headrest; wide armrests; reclining-style silhouette",
+    "suggestedRoomOrUse": "Living room, home theatre",
+    "detailsToConfirm": "Reclining mechanism, upholstery type and dimensions to be confirmed"
+  },
+  {
+    "id": 9003,
+    "name": "Axis Cross-Leg Dining Set",
+    "displayName": "Axis Cross-Leg Dining Set",
+    "slug": "axis-cross-leg-dining-set",
+    "sku": "HTC-DT-001",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/Axis_Cross-Leg_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Axis_Cross-Leg_Dining_Set/image_01.webp",
+        "alt": "Axis Cross-Leg Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Axis_Cross-Leg_Dining_Set/image_02.webp",
+        "alt": "Axis Cross-Leg Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Axis_Cross-Leg_Dining_Set/image_03.webp",
+        "alt": "Axis Cross-Leg Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Axis_Cross-Leg_Dining_Set/image_04.webp",
+        "alt": "Axis Cross-Leg Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A modern dining arrangement featuring a rounded rectangular tabletop, sculptural crossed pedestal base and coordinating upholstered chairs with slim legs.",
+    "shortDescription": "A modern dining arrangement featuring a rounded rectangular tabletop, sculptural crossed pedestal base and coordinating upholstered chairs with slim legs.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Charcoal / grey tabletop; beige-grey chairs",
+    "visibleFeatures": "Rounded rectangular top; cross-style pedestal; four visible chairs",
+    "suggestedRoomOrUse": "Dining room",
+    "detailsToConfirm": "Tabletop material, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9004,
+    "name": "MotionEase Extended-Leg Recliner",
+    "displayName": "MotionEase Extended-Leg Recliner",
+    "slug": "motionease-extended-leg-recliner",
+    "sku": "HTC-RC-002",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/MotionEase_Extended-Leg_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/MotionEase_Extended-Leg_Recliner/image_01.webp",
+        "alt": "MotionEase Extended-Leg Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MotionEase_Extended-Leg_Recliner/image_02.webp",
+        "alt": "MotionEase Extended-Leg Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MotionEase_Extended-Leg_Recliner/image_03.webp",
+        "alt": "MotionEase Extended-Leg Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MotionEase_Extended-Leg_Recliner/image_04.webp",
+        "alt": "MotionEase Extended-Leg Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A contemporary recliner with a padded headrest, contoured seat and extended leg support. A side-mounted control or adjustment component is visible in the product image.",
+    "shortDescription": "A contemporary recliner with a padded headrest, contoured seat and extended leg support. A side-mounted control or adjustment component is visible in the product image.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Grey",
+    "visibleFeatures": "Padded headrest; contoured seat; extended leg rest; side control visible",
+    "suggestedRoomOrUse": "Living room, relaxation area",
+    "detailsToConfirm": "Exact recline mechanism, control function, upholstery and dimensions to be confirmed"
+  },
+  {
+    "id": 9005,
+    "name": "Marblecrest Pedestal Dining Set",
+    "displayName": "Marblecrest Pedestal Dining Set",
+    "slug": "marblecrest-pedestal-dining-set",
+    "sku": "HTC-DT-002",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/Marblecrest_Pedestal_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Marblecrest_Pedestal_Dining_Set/image_01.webp",
+        "alt": "Marblecrest Pedestal Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Marblecrest_Pedestal_Dining_Set/image_02.webp",
+        "alt": "Marblecrest Pedestal Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Marblecrest_Pedestal_Dining_Set/image_03.webp",
+        "alt": "Marblecrest Pedestal Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Marblecrest_Pedestal_Dining_Set/image_04.webp",
+        "alt": "Marblecrest Pedestal Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A statement dining set with a light marble-look tabletop, sculptural dark pedestal base and matching upholstered dining chairs.",
+    "shortDescription": "A statement dining set with a light marble-look tabletop, sculptural dark pedestal base and matching upholstered dining chairs.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "White patterned tabletop; grey base; beige chairs",
+    "visibleFeatures": "Marble-look surface; sculptural pedestal base; upholstered chairs",
+    "suggestedRoomOrUse": "Dining room",
+    "detailsToConfirm": "Actual tabletop material, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9006,
+    "name": "LuxeTone Gold-Accent Dining Set",
+    "displayName": "LuxeTone Gold-Accent Dining Set",
+    "slug": "luxetone-gold-accent-dining-set",
+    "sku": "HTC-DT-003",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/LuxeTone_Gold-Accent_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/LuxeTone_Gold-Accent_Dining_Set/image_01.webp",
+        "alt": "LuxeTone Gold-Accent Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/LuxeTone_Gold-Accent_Dining_Set/image_02.webp",
+        "alt": "LuxeTone Gold-Accent Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/LuxeTone_Gold-Accent_Dining_Set/image_03.webp",
+        "alt": "LuxeTone Gold-Accent Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/LuxeTone_Gold-Accent_Dining_Set/image_04.webp",
+        "alt": "LuxeTone Gold-Accent Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A refined dining arrangement with a light-toned rectangular tabletop, coordinated upholstered chairs and distinctive warm metallic-look leg accents.",
+    "shortDescription": "A refined dining arrangement with a light-toned rectangular tabletop, coordinated upholstered chairs and distinctive warm metallic-look leg accents.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Ivory / cream with gold-tone accents",
+    "visibleFeatures": "Rectangular tabletop; upholstered chairs; gold-tone leg details",
+    "suggestedRoomOrUse": "Dining room, formal dining area",
+    "detailsToConfirm": "Actual finish/material, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9007,
+    "name": "Hearthside Lounge Armchair",
+    "displayName": "Hearthside Lounge Armchair",
+    "slug": "hearthside-lounge-armchair",
+    "sku": "HTC-SF-002",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Armchair",
+    "categories": [
+      "Armchairs",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "armchairs"
+    ],
+    "image": "/products/Hearthside_Lounge_Armchair/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Hearthside_Lounge_Armchair/image_01.webp",
+        "alt": "Hearthside Lounge Armchair - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Hearthside_Lounge_Armchair/image_02.webp",
+        "alt": "Hearthside Lounge Armchair - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Hearthside_Lounge_Armchair/image_03.webp",
+        "alt": "Hearthside Lounge Armchair - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Hearthside_Lounge_Armchair/image_04.webp",
+        "alt": "Hearthside Lounge Armchair - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A compact lounge armchair with a deep cushioned seat, supportive back and broad padded arms in a warm neutral finish.",
+    "shortDescription": "A compact lounge armchair with a deep cushioned seat, supportive back and broad padded arms in a warm neutral finish.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Beige / taupe",
+    "visibleFeatures": "Single seat; broad padded arms; cushioned back and seat",
+    "suggestedRoomOrUse": "Living room, bedroom, reading nook",
+    "detailsToConfirm": "Upholstery type, frame material and dimensions to be confirmed"
+  },
+  {
+    "id": 9008,
+    "name": "SlateForm Modern Dining Set",
+    "displayName": "SlateForm Modern Dining Set",
+    "slug": "slateform-modern-dining-set",
+    "sku": "HTC-DT-004",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/SlateForm_Modern_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/SlateForm_Modern_Dining_Set/image_01.webp",
+        "alt": "SlateForm Modern Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SlateForm_Modern_Dining_Set/image_02.webp",
+        "alt": "SlateForm Modern Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SlateForm_Modern_Dining_Set/image_03.webp",
+        "alt": "SlateForm Modern Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SlateForm_Modern_Dining_Set/image_04.webp",
+        "alt": "SlateForm Modern Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A contemporary dining set pairing a light stone-look rectangular tabletop and dark sculptural base with coordinated dark upholstered chairs.",
+    "shortDescription": "A contemporary dining set pairing a light stone-look rectangular tabletop and dark sculptural base with coordinated dark upholstered chairs.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Light grey patterned top; dark grey chairs",
+    "visibleFeatures": "Rectangular top; sculptural pedestal base; six visible chairs",
+    "suggestedRoomOrUse": "Dining room",
+    "detailsToConfirm": "Actual tabletop material, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9009,
+    "name": "Evolve 100 Lounge Chair with Ottoman",
+    "displayName": "Evolve 100 Lounge Chair with Ottoman",
+    "slug": "evolve-100-lounge-chair-with-ottoman",
+    "sku": "HTC-LC-100",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Lounge Chair & Ottoman",
+    "categories": [
+      "Lounge Chair & Ottoman",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "lounge-chair-ottoman"
+    ],
+    "image": "/products/Evolve_100_Lounge_Chair_with_Ottoman/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Evolve_100_Lounge_Chair_with_Ottoman/image_01.webp",
+        "alt": "Evolve 100 Lounge Chair with Ottoman - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Evolve_100_Lounge_Chair_with_Ottoman/image_02.webp",
+        "alt": "Evolve 100 Lounge Chair with Ottoman - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Evolve_100_Lounge_Chair_with_Ottoman/image_03.webp",
+        "alt": "Evolve 100 Lounge Chair with Ottoman - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Evolve_100_Lounge_Chair_with_Ottoman/image_04.webp",
+        "alt": "Evolve 100 Lounge Chair with Ottoman - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A premium reclining-style lounge chair paired with a matching ottoman, featuring a contoured upholstered seat, wood-look side shell and star-shaped swivel base. The image identifies it as Chair 100.",
+    "shortDescription": "A premium reclining-style lounge chair paired with a matching ottoman, featuring a contoured upholstered seat, wood-look side shell and star-shaped swivel base. The image identifies it as Chair 100.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Grey upholstery; walnut-look side panels",
+    "visibleFeatures": "Matching ottoman; contoured back; wood-look side shell; swivel-style base",
+    "suggestedRoomOrUse": "Living room, study, lounge",
+    "detailsToConfirm": "Confirm whether Chair 100 is the official model name; upholstery, shell material and dimensions to be confirmed"
+  },
+  {
+    "id": 9010,
+    "name": "MarbleArc Six-Seater Dining Set",
+    "displayName": "MarbleArc Six-Seater Dining Set",
+    "slug": "marblearc-six-seater-dining-set",
+    "sku": "HTC-DT-005",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/MarbleArc_Six-Seater_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/MarbleArc_Six-Seater_Dining_Set/image_01.webp",
+        "alt": "MarbleArc Six-Seater Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MarbleArc_Six-Seater_Dining_Set/image_02.webp",
+        "alt": "MarbleArc Six-Seater Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MarbleArc_Six-Seater_Dining_Set/image_03.webp",
+        "alt": "MarbleArc Six-Seater Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/MarbleArc_Six-Seater_Dining_Set/image_04.webp",
+        "alt": "MarbleArc Six-Seater Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A light marble-look dining tabletop paired with a dark sculptural central base and coordinated upholstered chairs for a contemporary dining space.",
+    "shortDescription": "A light marble-look dining tabletop paired with a dark sculptural central base and coordinated upholstered chairs for a contemporary dining space.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Light marble-look top; beige chairs; dark base",
+    "visibleFeatures": "Rectangular tabletop; sculptural central base; six visible chairs",
+    "suggestedRoomOrUse": "Dining room",
+    "detailsToConfirm": "Actual tabletop material, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9011,
+    "name": "CocoaRise High-Back Recliner",
+    "displayName": "CocoaRise High-Back Recliner",
+    "slug": "cocoarise-high-back-recliner",
+    "sku": "HTC-RC-003",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/CocoaRise_High-Back_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/CocoaRise_High-Back_Recliner/image_01.webp",
+        "alt": "CocoaRise High-Back Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/CocoaRise_High-Back_Recliner/image_02.webp",
+        "alt": "CocoaRise High-Back Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/CocoaRise_High-Back_Recliner/image_03.webp",
+        "alt": "CocoaRise High-Back Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/CocoaRise_High-Back_Recliner/image_04.webp",
+        "alt": "CocoaRise High-Back Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A warm tan recliner with a tall cushioned back, padded headrest and broad armrests. The image includes the printed model label Chair 18.",
+    "shortDescription": "A warm tan recliner with a tall cushioned back, padded headrest and broad armrests. The image includes the printed model label Chair 18.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Tan / caramel",
+    "visibleFeatures": "High back; padded headrest; broad armrests; reclining-style form",
+    "suggestedRoomOrUse": "Living room, home theatre",
+    "detailsToConfirm": "Confirm printed model label (appears to read Chair 18), recline mechanism, upholstery and dimensions"
+  },
+  {
+    "id": 9012,
+    "name": "Serenity Swivel Recliner",
+    "displayName": "Serenity Swivel Recliner",
+    "slug": "serenity-swivel-recliner",
+    "sku": "HTC-RC-004",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/Serenity_Swivel_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Serenity_Swivel_Recliner/image_01.webp",
+        "alt": "Serenity Swivel Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Serenity_Swivel_Recliner/image_02.webp",
+        "alt": "Serenity Swivel Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Serenity_Swivel_Recliner/image_03.webp",
+        "alt": "Serenity Swivel Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Serenity_Swivel_Recliner/image_04.webp",
+        "alt": "Serenity Swivel Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A contemporary light-grey recliner with a supportive high back, padded arms and a visible dark side support/base detail.",
+    "shortDescription": "A contemporary light-grey recliner with a supportive high back, padded arms and a visible dark side support/base detail.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Light grey",
+    "visibleFeatures": "High back; padded arms; side support/base detail; reclining-style silhouette",
+    "suggestedRoomOrUse": "Living room, relaxation area",
+    "detailsToConfirm": "Swivel/recline functions, upholstery type and dimensions to be confirmed"
+  },
+  {
+    "id": 9013,
+    "name": "Heritage Plush Recliner",
+    "displayName": "Heritage Plush Recliner",
+    "slug": "heritage-plush-recliner",
+    "sku": "HTC-RC-005",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/Heritage_Plush_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Heritage_Plush_Recliner/image_01.webp",
+        "alt": "Heritage Plush Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Heritage_Plush_Recliner/image_02.webp",
+        "alt": "Heritage Plush Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Heritage_Plush_Recliner/image_03.webp",
+        "alt": "Heritage Plush Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Heritage_Plush_Recliner/image_04.webp",
+        "alt": "Heritage Plush Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A classic deep-brown recliner with a generously padded back, segmented cushioning, rounded armrests and a substantial upholstered profile.",
+    "shortDescription": "A classic deep-brown recliner with a generously padded back, segmented cushioning, rounded armrests and a substantial upholstered profile.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Dark chocolate brown",
+    "visibleFeatures": "Segmented padded back; rounded armrests; deep cushioned seat",
+    "suggestedRoomOrUse": "Living room, home theatre",
+    "detailsToConfirm": "Reclining mechanism, upholstery type and dimensions to be confirmed"
+  },
+  {
+    "id": 9014,
+    "name": "WalnutFrame Classic Dining Set",
+    "displayName": "WalnutFrame Classic Dining Set",
+    "slug": "walnutframe-classic-dining-set",
+    "sku": "HTC-DT-006",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Dining Set",
+    "categories": [
+      "Dining Sets",
+      "Dining Room"
+    ],
+    "categorySlugs": [
+      "dining-sets"
+    ],
+    "image": "/products/WalnutFrame_Classic_Dining_Set/image_01.webp",
+    "images": [
+      {
+        "src": "/products/WalnutFrame_Classic_Dining_Set/image_01.webp",
+        "alt": "WalnutFrame Classic Dining Set - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/WalnutFrame_Classic_Dining_Set/image_02.webp",
+        "alt": "WalnutFrame Classic Dining Set - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/WalnutFrame_Classic_Dining_Set/image_03.webp",
+        "alt": "WalnutFrame Classic Dining Set - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/WalnutFrame_Classic_Dining_Set/image_04.webp",
+        "alt": "WalnutFrame Classic Dining Set - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A classic dining arrangement featuring a light rectangular tabletop and coordinating upholstered chairs with warm wood-look legs and frame accents.",
+    "shortDescription": "A classic dining arrangement featuring a light rectangular tabletop and coordinating upholstered chairs with warm wood-look legs and frame accents.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Ivory tabletop; tan / brown chairs",
+    "visibleFeatures": "Rectangular tabletop; upholstered chairs; warm wood-look accents",
+    "suggestedRoomOrUse": "Dining room",
+    "detailsToConfirm": "Tabletop and frame materials, chair count and dimensions to be confirmed"
+  },
+  {
+    "id": 9015,
+    "name": "SoftForm Comfort Recliner",
+    "displayName": "SoftForm Comfort Recliner",
+    "slug": "softform-comfort-recliner",
+    "sku": "HTC-RC-006",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/SoftForm_Comfort_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/SoftForm_Comfort_Recliner/image_01.webp",
+        "alt": "SoftForm Comfort Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SoftForm_Comfort_Recliner/image_02.webp",
+        "alt": "SoftForm Comfort Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SoftForm_Comfort_Recliner/image_03.webp",
+        "alt": "SoftForm Comfort Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/SoftForm_Comfort_Recliner/image_04.webp",
+        "alt": "SoftForm Comfort Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A front-facing recliner in a light neutral tone, with a tall cushioned back, integrated head support and generously padded armrests.",
+    "shortDescription": "A front-facing recliner in a light neutral tone, with a tall cushioned back, integrated head support and generously padded armrests.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Cream / beige",
+    "visibleFeatures": "High back; integrated head support; padded armrests; broad seat",
+    "suggestedRoomOrUse": "Living room, home theatre",
+    "detailsToConfirm": "Reclining mechanism, upholstery type and dimensions to be confirmed"
+  },
+  {
+    "id": 9016,
+    "name": "RelaxContour Pillow-Arm Recliner",
+    "displayName": "RelaxContour Pillow-Arm Recliner",
+    "slug": "relaxcontour-pillow-arm-recliner",
+    "sku": "HTC-RC-007",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/RelaxContour_Pillow-Arm_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/RelaxContour_Pillow-Arm_Recliner/image_01.webp",
+        "alt": "RelaxContour Pillow-Arm Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/RelaxContour_Pillow-Arm_Recliner/image_02.webp",
+        "alt": "RelaxContour Pillow-Arm Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/RelaxContour_Pillow-Arm_Recliner/image_03.webp",
+        "alt": "RelaxContour Pillow-Arm Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/RelaxContour_Pillow-Arm_Recliner/image_04.webp",
+        "alt": "RelaxContour Pillow-Arm Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A softly contoured recliner with a plush headrest, rounded pillow-style armrests and a relaxed, generously cushioned seat.",
+    "shortDescription": "A softly contoured recliner with a plush headrest, rounded pillow-style armrests and a relaxed, generously cushioned seat.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Taupe / light brown",
+    "visibleFeatures": "Pillow-style arms; padded headrest; contoured cushioned seat",
+    "suggestedRoomOrUse": "Living room, relaxation area",
+    "detailsToConfirm": "Reclining mechanism, upholstery type and dimensions to be confirmed"
+  },
+  {
+    "id": 9017,
+    "name": "Executive Comfort Power Recliner",
+    "displayName": "Executive Comfort Power Recliner",
+    "slug": "executive-comfort-power-recliner",
+    "sku": "HTC-RC-008",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/Executive_Comfort_Power_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/Executive_Comfort_Power_Recliner/image_01.webp",
+        "alt": "Executive Comfort Power Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Executive_Comfort_Power_Recliner/image_02.webp",
+        "alt": "Executive Comfort Power Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Executive_Comfort_Power_Recliner/image_03.webp",
+        "alt": "Executive Comfort Power Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/Executive_Comfort_Power_Recliner/image_04.webp",
+        "alt": "Executive Comfort Power Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A premium-looking recliner shown in a styled interior, with a high supportive back, padded armrests and a broad cushioned seat.",
+    "shortDescription": "A premium-looking recliner shown in a styled interior, with a high supportive back, padded armrests and a broad cushioned seat.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Beige / cream",
+    "visibleFeatures": "High back; padded arms; broad seat; styled product image",
+    "suggestedRoomOrUse": "Living room, home theatre",
+    "detailsToConfirm": "Power/manual operation, upholstery type, available functions and dimensions to be confirmed"
+  },
+  {
+    "id": 9018,
+    "name": "AmberRise Statement Recliner",
+    "displayName": "AmberRise Statement Recliner",
+    "slug": "amberrise-statement-recliner",
+    "sku": "HTC-RC-009",
+    "price": null,
+    "regularPrice": null,
+    "salePrice": null,
+    "currency": "INR",
+    "category": "Recliner",
+    "categories": [
+      "Recliners",
+      "Living Room"
+    ],
+    "categorySlugs": [
+      "recliners"
+    ],
+    "image": "/products/AmberRise_Statement_Recliner/image_01.webp",
+    "images": [
+      {
+        "src": "/products/AmberRise_Statement_Recliner/image_01.webp",
+        "alt": "AmberRise Statement Recliner - product view 1",
+        "view": "View 1",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/AmberRise_Statement_Recliner/image_02.webp",
+        "alt": "AmberRise Statement Recliner - product view 2",
+        "view": "View 2",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/AmberRise_Statement_Recliner/image_03.webp",
+        "alt": "AmberRise Statement Recliner - product view 3",
+        "view": "View 3",
+        "source": "HTC product image"
+      },
+      {
+        "src": "/products/AmberRise_Statement_Recliner/image_04.webp",
+        "alt": "AmberRise Statement Recliner - product view 4",
+        "view": "View 4",
+        "source": "HTC product image"
+      }
+    ],
+    "description": "A distinctive warm-amber recliner with a tall back, integrated head support, shaped armrests and a sculpted side profile.",
+    "shortDescription": "A distinctive warm-amber recliner with a tall back, integrated head support, shaped armrests and a sculpted side profile.",
+    "brand": "HTC",
+    "stockStatus": "in_stock",
+    "source": "HTC supplied product photo",
+    "visibleColourOrFinish": "Amber / orange",
+    "visibleFeatures": "Tall back; integrated head support; shaped armrests; reclining-style form",
+    "suggestedRoomOrUse": "Living room, accent seating",
+    "detailsToConfirm": "Reclining mechanism, upholstery type and dimensions to be confirmed"
+  }
+]

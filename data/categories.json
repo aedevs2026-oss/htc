@@ -1,0 +1,47 @@
+[
+  {
+    "id": "recliners",
+    "name": "Recliners",
+    "slug": "recliners",
+    "parent": null,
+    "count": 9,
+    "description": "Comfort-focused recliner chairs and lounge seating from HTC.",
+    "image": "/images/recliner-editorial.webp"
+  },
+  {
+    "id": "dining-sets",
+    "name": "Dining Sets",
+    "slug": "dining-sets",
+    "parent": null,
+    "count": 6,
+    "description": "Contemporary dining tables and coordinated chair sets from HTC.",
+    "image": "/images/category-dining.webp"
+  },
+  {
+    "id": "sofas",
+    "name": "Sofas",
+    "slug": "sofas",
+    "parent": null,
+    "count": 1,
+    "description": "Compact sofas and upholstered seating for contemporary living spaces.",
+    "image": "/images/category-living.webp"
+  },
+  {
+    "id": "armchairs",
+    "name": "Armchairs",
+    "slug": "armchairs",
+    "parent": null,
+    "count": 1,
+    "description": "Comfortable accent seating for living rooms and reading corners.",
+    "image": "/images/accent-chair.webp"
+  },
+  {
+    "id": "lounge-chair-ottoman",
+    "name": "Lounge Chair & Ottoman",
+    "slug": "lounge-chair-ottoman",
+    "parent": null,
+    "count": 1,
+    "description": "Lounge seating for relaxed everyday living.",
+    "image": "/images/accent-chair.webp"
+  }
+]

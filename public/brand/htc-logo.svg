@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 92" role="img" aria-labelledby="title">
+<title id="title">HTC Furniture</title>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M32 52 C33 32 42 14 55 5 M47 52 C49 29 61 13 77 8 M63 52 C65 32 77 21 91 18" stroke="#71883A" stroke-width="5"/>
+  <path d="M24 18 C48 13 75 18 94 34 C79 32 65 36 57 51 C53 34 40 23 24 18Z" fill="#B3D62D" stroke="#B3D62D" stroke-width="1"/>
+  <path d="M18 53 Q43 46 67 54 L76 60 Q50 67 24 61Z" fill="#9DBE58" stroke="#9DBE58" stroke-width="1"/>
+  <path d="M25 61 L23 79 M42 63 L40 83 M69 60 L72 82" stroke="#71883A" stroke-width="4"/>
+</g>
+<text x="83" y="67" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="31" fill="#123D2B">HTC</text>
+<text x="85" y="81" font-family="Arial, Helvetica, sans-serif" font-size="7" letter-spacing="2.2" fill="#71883A">FURNITURE</text>
+</svg>
